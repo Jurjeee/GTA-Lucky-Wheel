@@ -12,7 +12,7 @@ SetWinDelay, -1
 SetControlDelay, -1
 SendMode Input
 
-delay := 4250 ;Edit this value to change the spinning speed: higher value = slower spin
+delay := 3500 ;Edit this value to change the spinning speed: higher value = slower spin
 isrunning = 0
 
 CoordMode, ToolTip, Screen
