@@ -42,3 +42,9 @@ f1:: ;Start the script.
 ^!a:: ;Kill GTA V
     Process, Close, GTA5.exe
     Return
+    
+^!v:: ;Disconnect internet adapter
+    Run, *RunAs %ComSpec% /c netsh interface set interface name="Ethernet" admin=disabled,, Hide
+	Sleep 2000
+	Run, *RunAs %ComSpec% /c netsh interface set interface name="Ethernet" admin=enabled,, Hide
+    Return
